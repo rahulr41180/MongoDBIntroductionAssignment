@@ -1,0 +1,26 @@
+
+use assignment
+
+db.createCollection("users")
+
+db.users.insert({"first_name": "Rahul","last_name":"Rathor","email": "rahulrathor@gmail.com","gender":"male","age":24})
+
+db.users.find({}).pretty()
+
+db.users.insertMany([{"first_name":"Raju"},{"first_name":"Avinash"},{"first_name":"Ajay"},{"first_name":"Jay"},{"first_name":"Ronaldo"},
+{"first_name":"Messi"},{"first_name":"Modi"},{"first_name":"Suraj"},{"first_name":"Raj"}])
+
+db.users.findOne({"first_name":"Rahul"})
+
+db.users.update({"first_name":"Raju"},{"age":22})
+db.users.update({"first_name":"Avinash"},{"age":22})
+
+db.users.updateMany({},{$set : {"country":"India"}})
+
+db.users.remove({"_id" : ObjectId("622997f1b21c5bdb5ac7fe59")})
+
+db.users.update({"first_name":"Avinash"},{$set : {"last_name":"Kumar","email":"avinashkumar@gmai.com","age":25}})
+
+db.users.updateMany({},{$set : {"gender":"male"}})
+
+db.users.update({"_id" : ObjectId("622997f1b21c5bdb5ac7fe5b")},{$unset : {"country":"India"}})
