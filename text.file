@@ -24,3 +24,14 @@ db.users.update({"first_name":"Avinash"},{$set : {"last_name":"Kumar","email":"a
 db.users.updateMany({},{$set : {"gender":"male"}})
 
 db.users.update({"_id" : ObjectId("622997f1b21c5bdb5ac7fe5b")},{$unset : {"country":"India"}})
+
+{ "_id" : ObjectId("622995fd3f41604d89d14095"), "first_name" : "Rahul", "last_name" : "Rathor", "email" : "rahulrathor@gmail.com", "gender" : "male", "age" : 24, "country" : "India" }
+{ "_id" : ObjectId("622997f1b21c5bdb5ac7fe5a"), "last_name" : "Kumar", "email" : "avinashkumar@gmai.com", "age" : 25, "first_name" : "Avinash", "country" : "India", "gender" : "male" }
+{ "_id" : ObjectId("622997f1b21c5bdb5ac7fe5b"), "first_name" : "Ajay", "gender" : "male" }
+{ "_id" : ObjectId("622997f1b21c5bdb5ac7fe5c"), "first_name" : "Jay", "country" : "India", "gender" : "male" }
+{ "_id" : ObjectId("622997f1b21c5bdb5ac7fe5d"), "first_name" : "Ronaldo", "country" : "India", "gender" : "male" }
+{ "_id" : ObjectId("622997f1b21c5bdb5ac7fe5e"), "first_name" : "Messi", "country" : "India", "gender" : "male" }
+{ "_id" : ObjectId("622997f1b21c5bdb5ac7fe5f"), "first_name" : "Modi", "country" : "India", "gender" : "male" }
+{ "_id" : ObjectId("622997f1b21c5bdb5ac7fe60"), "first_name" : "Suraj", "country" : "India", "gender" : "male" }
+{ "_id" : ObjectId("622997f1b21c5bdb5ac7fe61"), "first_name" : "Raj", "country" : "India", "gender" : "male" }
+{ "_id" : ObjectId("62299b83b21c5bdb5ac7fe62"), "age" : 22, "first_name" : "Raju", "country" : "India", "gender" : "male" }
